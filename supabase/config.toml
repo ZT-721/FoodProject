@@ -1,0 +1,35 @@
+# Supabase 設定檔案
+
+# 專案設定
+project_id: your-supabase-project-id
+project_url: https://your-project-id.supabase.co
+anon_key: your-anon-key
+service_role_key: your-service-role-key
+
+# 資料庫設定
+database_url: postgresql://postgres:[password]@db.[project-id].supabase.co:5432/postgres
+
+# 環境變數
+env:
+  SUPABASE_URL: https://your-project-id.supabase.co
+  SUPABASE_ANON_KEY: your-anon-key
+  SUPABASE_SERVICE_ROLE_KEY: your-service-role-key
+  DATABASE_URL: postgresql://postgres:[password]@db.[project-id].supabase.co:5432/postgres
+
+# API 設定
+api:
+  base_url: https://your-project-id.supabase.co/rest/v1
+  auth_url: https://your-project-id.supabase.co/auth/v1
+  storage_url: https://your-project-id.supabase.co/storage/v1
+
+# 安全設定
+security:
+  enable_rls: true
+  enable_auth: false  # 目前不需要用戶認證
+  enable_storage: false  # 目前不需要檔案儲存
+
+# 功能設定
+features:
+  enable_realtime: false
+  enable_edge_functions: false
+  enable_storage: false

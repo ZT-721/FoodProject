@@ -1,0 +1,43 @@
+# Render 部署配置
+
+# 建置命令
+buildCommand: pip install -r requirements.txt && python data/create_recipe_database.py && python data/create_vector_index.py
+
+# 啟動命令
+startCommand: python app.py
+
+# 環境變數
+envVars:
+  - key: FLASK_ENV
+    value: production
+  - key: SECRET_KEY
+    value: your-production-secret-key-here
+  - key: CHROMA_PERSIST_DIRECTORY
+    value: ./chroma_db
+  - key: UPLOAD_FOLDER
+    value: ./uploads
+  - key: MAX_CONTENT_LENGTH
+    value: 16777216
+
+# 健康檢查
+healthCheckPath: /api/health
+
+# 自動部署
+autoDeploy: true
+
+# 服務類型
+type: web
+
+# 實例類型
+instanceType: starter
+
+# 區域
+region: oregon
+
+# 環境
+environment: python3
+
+# 建置環境
+buildEnvironment:
+  - key: PYTHON_VERSION
+    value: 3.9.16

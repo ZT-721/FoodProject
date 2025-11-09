@@ -1,0 +1,33 @@
+# Flask==3.0.3
+# Flask-CORS==4.0.2
+# Flask-SQLAlchemy==3.1.1
+# python-dotenv==1.0.0
+# requests==2.32.3
+# openai==1.104.2
+# chromadb==0.5.11
+# langchain==0.3.27
+# langchain-openai==0.3.35
+# #sentence-transformers==3.1.0
+# Pillow==10.4.0
+# psycopg2-binary==2.9.10
+# numpy==1.26.4
+# pandas==2.2.3
+# python-multipart==0.0.17
+# uvicorn==0.32.0
+# fastapi==0.115.4
+# pydantic==2.9.2
+Flask
+Flask-CORS
+Flask-SQLAlchemy
+python-dotenv
+requests
+openai
+langchain
+langchain-openai
+Pillow
+psycopg2-binary
+python-multipart
+uvicorn
+fastapi
+pydantic
+gunicorn
