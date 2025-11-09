@@ -57,7 +57,7 @@ export const searchRecipes = async (data: {
   ingredients: string[];
   preferences?: { cooking_time?: string; difficulty?: string; cuisine?: string };
 }): Promise<SearchResponse> => {
-  return api.post<SearchResponse>('/recipes/search', data);
+  return api.post('/recipes/search', data);
 };
 
 export const getPopularRecipes = async () => {

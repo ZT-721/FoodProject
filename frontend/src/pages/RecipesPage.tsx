@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Clock, Star, ChefHat, Filter, Search } from 'lucide-react';
 import toast from 'react-hot-toast';
-import { searchRecipes, SearchResponse } from '../services/api';
+import { searchRecipes } from '../services/api';
+import { SearchResponse } from '../types/api';
 
 interface Recipe {
   id: string;
